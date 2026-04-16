@@ -1,0 +1,226 @@
+.stApp { background-color: #0f1117; color: #cdd6f4; }
+
+/* Cabecera */
+.dh-header {
+    background: linear-gradient(135deg, #1a1f2e 0%, #16213e 50%, #0f3460 100%);
+    border: 1px solid #e94560;
+    border-radius: 12px;
+    padding: 28px 36px 22px 36px;
+    margin-bottom: 32px;
+}
+.dh-header h1 {
+    color: #e94560;
+    font-size: 1.9rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin: 0 0 4px 0;
+}
+.dh-header p {
+    color: #8892a4;
+    font-size: 0.82rem;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.dh-badge {
+    display: inline-block;
+    background: #e94560;
+    color: white;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding: 2px 9px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+/* Etiqueta de sección */
+.dh-label {
+    color: #e94560;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #1e2533;
+    padding-bottom: 5px;
+    margin: 0 0 16px 0;
+}
+
+/* Grid de opciones de extracción */
+.opt-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 28px;
+}
+.opt-cell {
+    background: #1a1f2e;
+    border: 1px solid #2e3347;
+    border-radius: 8px;
+    padding: 14px 16px;
+    transition: border-color 0.2s;
+}
+.opt-cell:hover { border-color: #e94560; }
+.opt-cell .opt-title {
+    color: #cdd6f4;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    display: block;
+    margin-bottom: 2px;
+}
+.opt-cell .opt-desc {
+    color: #5c6370;
+    font-size: 0.72rem;
+}
+
+/* Fila URL + boton */
+.dh-url-row {
+    background: #1a1f2e;
+    border: 1px solid #2e3347;
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+}
+
+/* Inputs */
+div[data-testid="stTextInput"] input {
+    background-color: #12151f !important;
+    border: 1px solid #2e3347 !important;
+    border-radius: 6px !important;
+    color: #cdd6f4 !important;
+    font-size: 0.93rem !important;
+}
+div[data-testid="stTextInput"] input:focus {
+    border-color: #e94560 !important;
+    box-shadow: 0 0 0 2px rgba(233,69,96,0.15) !important;
+}
+
+/* Boton principal */
+div[data-testid="stButton"] > button {
+    background: linear-gradient(90deg, #e94560, #c73652) !important;
+    color: white !important;
+    font-weight: 700 !important;
+    font-size: 0.82rem !important;
+    letter-spacing: 2px !important;
+    border: none !important;
+    border-radius: 6px !important;
+    height: 42px !important;
+}
+div[data-testid="stButton"] > button:hover { opacity: 0.82 !important; }
+
+/* Radio personalizado */
+div[data-testid="stRadio"] label {
+    font-size: 0.86rem !important;
+    color: #aab2c0 !important;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background-color: #12151f !important;
+    border-right: 1px solid #1e2533 !important;
+}
+section[data-testid="stSidebar"] label,
+section[data-testid="stSidebar"] .stCheckbox label,
+section[data-testid="stSidebar"] .stSelectbox label {
+    color: #8892a4 !important;
+    font-size: 0.84rem !important;
+}
+section[data-testid="stSidebar"] .stSlider label {
+    color: #8892a4 !important;
+    font-size: 0.84rem !important;
+}
+
+/* Metricas */
+div[data-testid="metric-container"] {
+    background: #1a1f2e;
+    border: 1px solid #2e3347;
+    border-radius: 8px;
+    padding: 12px !important;
+}
+div[data-testid="metric-container"] label { color: #5c6370 !important; font-size: 0.75rem !important; }
+div[data-testid="metric-container"] div[data-testid="stMetricValue"] {
+    color: #e94560 !important; font-weight: 800 !important;
+}
+
+/* Tabs */
+div[data-testid="stTabs"] button {
+    color: #5c6370 !important;
+    font-size: 0.78rem !important;
+    letter-spacing: 1.5px !important;
+    text-transform: uppercase !important;
+}
+div[data-testid="stTabs"] button[aria-selected="true"] {
+    color: #e94560 !important;
+    border-bottom: 2px solid #e94560 !important;
+    background: transparent !important;
+}
+
+/* Dataframe */
+div[data-testid="stDataFrame"] { border: 1px solid #2e3347 !important; border-radius: 6px !important; }
+
+hr { border-color: #1e2533 !important; }
+.stCheckbox > label { font-size: 0.83rem !important; }
+
+/* Boton STOP (secondary) */
+div[data-testid="stButton"] > button[kind="secondary"] {
+    background: transparent !important;
+    border: 1px solid #e94560 !important;
+    color: #e94560 !important;
+    font-weight: 700 !important;
+    font-size: 0.82rem !important;
+    letter-spacing: 2px !important;
+    border-radius: 6px !important;
+    height: 42px !important;
+}
+div[data-testid="stButton"] > button[kind="secondary"]:hover {
+    background: rgba(233,69,96,0.08) !important;
+}
+
+/* Barra de estado rastreo activo */
+.dh-status-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(233,69,96,0.07);
+    border: 1px solid rgba(233,69,96,0.25);
+    border-radius: 8px;
+    padding: 10px 18px;
+    margin-bottom: 20px;
+}
+
+/* Indicador pulsante */
+.dh-pulse {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #e94560;
+    animation: pulse 1.4s ease-in-out infinite;
+}
+@keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50%       { opacity: 0.4; transform: scale(0.7); }
+}
+
+/* Caja de logs */
+.dh-log-box {
+    background: #0b0d14;
+    border: 1px solid #1e2533;
+    border-radius: 8px;
+    padding: 14px 18px;
+    max-height: 320px;
+    overflow-y: auto;
+    line-height: 1.9;
+    font-family: 'Courier New', monospace;
+}
+
+/* Progress bar color */
+div[data-testid="stProgress"] > div > div {
+    background: linear-gradient(90deg, #e94560, #c73652) !important;
+}
+
+/* Sidebar: boton primario ancho */
+section[data-testid="stSidebar"] div[data-testid="stButton"] > button {
+    width: 100%;
+}

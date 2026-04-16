@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>DeepScraper OS</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Inter, sans-serif;
+background:#070b14;
+color:white;
+}
+
+/* NAVBAR */
+
+.navbar{
+height:65px;
+background:#0f172a;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 30px;
+border-bottom:1px solid #1e293b;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+}
+
+.menu span{
+margin:0 15px;
+cursor:pointer;
+color:#94a3b8;
+}
+
+/* MAIN */
+
+.main{
+display:flex;
+height:calc(100vh - 65px);
+}
+
+/* SIDEBAR */
+
+.sidebar{
+width:260px;
+background:#020617;
+padding:25px;
+border-right:1px solid #1e293b;
+}
+
+.section{
+margin-bottom:25px;
+}
+
+input,select{
+width:100%;
+padding:10px;
+border-radius:8px;
+border:none;
+background:#0f172a;
+color:white;
+}
+
+/* WORKSPACE */
+
+.workspace{
+flex:1;
+padding:25px;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+/* PIPELINE */
+
+.pipeline{
+display:flex;
+gap:20px;
+align-items:center;
+overflow-x:auto;
+}
+
+.node{
+min-width:170px;
+background:#0f172a;
+padding:20px;
+border-radius:12px;
+text-align:center;
+border:1px solid #1e293b;
+transition:.3s;
+}
+
+.node:hover{
+transform:translateY(-5px);
+background:#1e293b;
+}
+
+/* LOG PANEL */
+
+.logs{
+height:180px;
+background:#020617;
+border-radius:10px;
+padding:15px;
+overflow:auto;
+font-family:monospace;
+color:#22c55e;
+}
+
+/* BUTTON */
+
+.run{
+background:#ff4d6d;
+border:none;
+padding:12px 25px;
+border-radius:10px;
+color:white;
+cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+<div class="logo">🧠 DeepScraper OS</div>
+<div class="menu">
+<span>Workspace</span>
+<span>Jobs</span>
+<span>Results</span>
+<span>Settings</span>
+</div>
+<button class="run">RUN JOB</button>
+</div>
+
+<div class="main">
+
+<div class="sidebar">
+
+<div class="section">
+<h4>🎯 Target</h4>
+<input placeholder="https://target-site.com">
+</div>
+
+<div class="section">
+<h4>⚙ Engine</h4>
+<select>
+<option>Chromium</option>
+<option>Firefox</option>
+</select>
+</div>
+
+<div class="section">
+<h4>🕶 Stealth Mode</h4>
+<select>
+<option>Off</option>
+<option>Anti-Bot Basic</option>
+<option>Advanced Cloaking</option>
+</select>
+</div>
+
+</div>
+
+<div class="workspace">
+
+<h2>Visual Scraping Pipeline</h2>
+
+<div class="pipeline">
+
+<div class="node">🌐 Target</div>
+<div class="node">🕷 Crawler</div>
+<div class="node">📄 Parser</div>
+<div class="node">🖼 Media Extractor</div>
+<div class="node">📦 Export</div>
+
+</div>
+
+<h2>Live Execution Logs</h2>
+
+<div class="logs">
+> System ready...<br>
+> Waiting job execution...
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
